@@ -1,0 +1,15 @@
+---
+- name: Instalação e Configuração do Nginx
+  hosts: <nome-do-host-ou-grupo-no-inventário>
+  become: yes
+
+  tasks:
+    - name: Instalar o Nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Copiar o arquivo site.html
+      copy:
+        src: /caminho/para/o/arquivo/site.html
+        dest: /var/www/html/site.html
