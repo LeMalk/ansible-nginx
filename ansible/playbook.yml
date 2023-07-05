@@ -1,6 +1,6 @@
 ---
 - name: Instalação e Configuração do Nginx
-  hosts: all
+  hosts: localhost
   become: yes
 
   tasks:
