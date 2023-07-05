@@ -1,6 +1,6 @@
 ---
 - name: Instalação e Configuração do Nginx
-  hosts: <nome-do-host-ou-grupo-no-inventário>
+  hosts: all
   become: yes
 
   tasks:
