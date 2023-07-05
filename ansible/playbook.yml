@@ -11,5 +11,5 @@
 
     - name: Copiar o arquivo site.html
       copy:
-        src: /caminho/para/o/arquivo/site.html
-        dest: /var/www/html/site.html
+        src: ./site.html
+        dest: /usr/share/nginx/html/site.html
